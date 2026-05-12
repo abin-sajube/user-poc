@@ -8,18 +8,17 @@ interface UserProp {
 }
 
 async function getUser(userId: string): Promise<User> {
-
   const res = await fetch(`http://localhost:3000/api/users/${userId}`);
-  
+
   if (!res.ok) {
     throw new Error("Failed to fetch the users");
   }
-  
+
   return res.json();
 }
 
 export default async function UserPage({ params }: UserProp) {
-  const {userId} = await params;
+  const { userId } = await params;
   const user = await getUser(userId);
 
   return (

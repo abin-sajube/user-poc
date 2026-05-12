@@ -1,7 +1,4 @@
-
-export default function Contact(){
+export default function Contact() {
   console.log("hello from server");
-    return (
-      <div>Hi its contact section</div>  
-    );
+  return <div>Hi its contact section</div>;
 }

@@ -43,23 +43,4 @@ describe("UserDetails", () => {
     expect(element).toBeInTheDocument();
   });
 
-  //   test("renders a link to the user details page", () => {
-  //     //arrange
-  //     render(
-  //       <UserDetails
-  //         user={{
-  //           id: "1",
-  //           name: "Abin",
-  //           email: "abin@gmail.com",
-  //           phone: "122232323",
-  //         }}
-  //       />,
-  //     );
-
-  //     //act
-  //     const link = screen.getByRole("link", { name: "Abin" });
-
-  //     //assert
-  //     expect(link).toBeInTheDocument();
-  //   });
 });

@@ -38,7 +38,7 @@ describe("UserCard", () => {
 
     //assert
     expect(link).toBeInTheDocument();
-    expect(link).toHaveAttribute("href","/users/1")
+    expect(link).toHaveAttribute("href", "/users/1");
   });
 
   test("does not display the user details link", () => {

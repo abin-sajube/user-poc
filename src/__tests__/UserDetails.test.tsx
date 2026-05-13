@@ -42,5 +42,4 @@ describe("UserDetails", () => {
     //assert
     expect(element).toBeInTheDocument();
   });
-
 });

@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import UserCard from "../components/UserCard";
-import Home from "../page";
+import Home from "../app/page";
 
 describe("Home Page", () => {
   test("renders the page heading", () => {

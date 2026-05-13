@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { User } from "../types/user";
 
 interface UserProp {
@@ -16,6 +17,9 @@ export default function UserDetails({ user }: UserProp) {
         <strong>Phone:</strong>
         {user.phone}
       </p>
+      <Link href={"/users"}>
+        <button>Go back to users page</button>
+      </Link>
     </div>
   );
 }

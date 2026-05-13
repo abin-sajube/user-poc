@@ -1,17 +1,9 @@
-import UserCard from "../components/UserCard";
-import { User } from "../types/user";
-
-async function getUsers(): Promise<User[]> {
-  const response = await fetch("http://localhost:3000/api/users");
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch the users");
-  }
-
-  return response.json();
-}
+import { getUsers } from "@/services/user.service";
+import UserCard from "../../components/UserCard";
+import { User } from "../../types/user";
 
 export default async function Users() {
+  
   const users = await getUsers();
 
   return (

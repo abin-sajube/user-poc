@@ -1,8 +1,5 @@
 "use client";
 
-export default function About(){
-  console.log("hello from client");
-    return (
-      <div>Hi its about section</div>  
-    );
+export default function About() {
+  return <div>Hi its about section</div>;
 }

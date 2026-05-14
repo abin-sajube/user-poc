@@ -15,10 +15,11 @@ describe("UserDetails", () => {
     render(<UserDetails user={user} />);
 
     //act
-    const heading = screen.getByRole("heading", { level: 2, name: "Abin" });
+    const heading = screen.getByRole("heading", { level: 1, name: "Abin" });
 
     //assert
     expect(heading).toBeInTheDocument();
+
   });
 
   test("renders the users email", () => {

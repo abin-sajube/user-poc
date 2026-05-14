@@ -1,5 +1,4 @@
 import { render, screen } from "@testing-library/react";
-import UserCard from "../components/UserCard";
 import Home from "../app/page";
 
 describe("Home Page", () => {

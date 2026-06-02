@@ -17,8 +17,14 @@ export default function InputField({
 }: InputFieldProps) {
   return (
     <div>
-      <label className="text-sm font-medium text-gray-700">{label}</label>
+      <label
+        htmlFor={register.name}
+        className="text-sm font-medium text-gray-700"
+      >
+        {label}
+      </label>
       <input
+        id={register.name}
         type={type}
         {...register}
         placeholder={placeholder}

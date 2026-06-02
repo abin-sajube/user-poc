@@ -1,41 +1,14 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import NavigationButton from "@/components/NavigationButton";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-      </main>
-    </div>
+    <main className="min-h-screen bg-slate-900 flex items-center justify-center">
+      <div className="bg-white rounded-2xl p-10 text-center">
+        <h1 className="text-4xl font-bold text-gray-800 mb-6">
+          User management
+        </h1>
+        <NavigationButton urlPath="/users" title="Go to users page" />
+      </div>
+    </main>
   );
 }
